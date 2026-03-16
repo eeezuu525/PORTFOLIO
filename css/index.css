@@ -47,12 +47,9 @@ html {
   position: fixed;
   top: 0;
   bottom: auto;
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   background-color: rgba(255, 255, 255, 0.063);
-  transition: background-color 0.3s ease, -webkit-backdrop-filter 0.3s ease;
   transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
-  transition: background-color 0.3s ease, backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease;
 }
 .sticky-header .inner {
   max-width: 160rem;
@@ -95,7 +92,6 @@ html {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  /* 반복적으로 떠있는 느낌 */
 }
 .main-visual.fixed {
   position: fixed;
@@ -149,6 +145,9 @@ html {
     opacity: 1;
     transform: translateY(0);
   }
+}
+.main-visual {
+  /* 반복적으로 떠있는 느낌 */
 }
 @keyframes float {
   0% {
@@ -563,8 +562,7 @@ html {
   justify-content: center;
   gap: 5rem;
   background: linear-gradient(135deg, rgba(109, 109, 109, 0.2), rgba(120, 180, 220, 0.15));
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   border: 2.5px solid rgba(255, 255, 255, 0.25);
   border-radius: 3rem;
   padding: 2rem;
@@ -669,13 +667,15 @@ html {
   color: #000;
   transition: all 0.2s ease;
   overflow: visible;
-  /* hover 시 구름 배경 */
 }
 .bg-gradient .project .inner .project_wrap .project_box .text_box .project_links a.btn:hover {
   animation: fluffyCloud 0.8s ease-in-out forwards;
 }
 .bg-gradient .project .inner .project_wrap .project_box .text_box .project_links a.btn span {
   margin-top: 0.8rem;
+}
+.bg-gradient .project .inner .project_wrap .project_box .text_box .project_links a.btn {
+  /* hover 시 구름 배경 */
 }
 .bg-gradient .project .inner .project_wrap .project_box .text_box .project_links a.btn.link_web:hover {
   color: #fff;
@@ -862,9 +862,10 @@ html {
   font-size: 2.6rem;
 }
 .bg-gradient #contact .inner .contact_wrap .main {
+  z-index: 999;
   display: flex;
   align-items: center;
-  gap: 10rem;
+  gap: 8rem;
 }
 .bg-gradient #contact .inner .contact_wrap .main .call {
   display: flex;
@@ -875,20 +876,32 @@ html {
   display: flex;
   gap: 1.5rem;
 }
+.bg-gradient #contact .inner .contact_wrap .main .call .phone:hover {
+  color: #FFD700;
+}
 .bg-gradient #contact .inner .contact_wrap .main .call .e-mail {
   display: flex;
   gap: 1.5rem;
 }
+.bg-gradient #contact .inner .contact_wrap .main .call .e-mail:hover {
+  color: #FFD700;
+}
 .bg-gradient #contact .inner .contact_wrap .main .call span {
   font-size: 20px;
+  font-family: "TMoneyDungunbaram";
 }
 .bg-gradient #contact .inner .contact_wrap .main .call .btn_wrap {
   margin-top: 2rem;
   display: flex;
+  gap: 2.5rem;
   justify-content: space-between;
+  font-family: "TMoneyDungunbaram";
 }
 .bg-gradient #contact .inner .contact_wrap .main .call .btn_wrap a {
   font-size: 20px;
+}
+.bg-gradient #contact .inner .contact_wrap .main .call .btn_wrap a:hover {
+  color: #FFD700;
 }
 
 .cloud_layer {

@@ -703,7 +703,7 @@ $sky-gradient: linear-gradient(181deg,
     }
 
     .project {
-        
+
         position: relative;
         display: block;
         z-index: 3;
@@ -948,11 +948,11 @@ $sky-gradient: linear-gradient(181deg,
         .inner {
             .category {
                 font-size: 11rem;
-                color: rgb(255, 255, 255);          
+                color: rgb(255, 255, 255);
                 text-shadow: none;
-                -webkit-text-stroke: 2px rgba(114, 114, 114, 0.683); 
+                -webkit-text-stroke: 2px rgba(114, 114, 114, 0.683);
             }
-    
+
 
         }
     }
@@ -962,11 +962,11 @@ $sky-gradient: linear-gradient(181deg,
 
         .inner {
 
-           .category {
+            .category {
                 font-size: 11rem;
-                color: rgb(255, 255, 255);          
+                color: rgb(255, 255, 255);
                 text-shadow: none;
-                -webkit-text-stroke: 2px rgba(114, 114, 114, 0.683); 
+                -webkit-text-stroke: 2px rgba(114, 114, 114, 0.683);
             }
 
             .project_wrap {
@@ -988,15 +988,15 @@ $sky-gradient: linear-gradient(181deg,
 
             .category {
                 font-size: 9rem;
-                color: rgba(255, 255, 255, 0.134);          
+                color: rgba(255, 255, 255, 0.134);
                 text-shadow: none;
-                -webkit-text-stroke: 2px rgba(255, 255, 255, 0.683); 
+                -webkit-text-stroke: 2px rgba(255, 255, 255, 0.683);
             }
 
             .project_wrap {
                 margin-top: 7rem;
-    \            
-                .project_box {
+
+                \  .project_box {
                     height: 58rem;
 
 
@@ -1009,16 +1009,17 @@ $sky-gradient: linear-gradient(181deg,
 
     #Clone {
         padding-top: 12rem;
+
         .inner {
-           .category {
+            .category {
                 font-size: 9rem;
-                color: rgba(255, 255, 255, 0.134);          
+                color: rgba(255, 255, 255, 0.134);
                 text-shadow: none;
-                -webkit-text-stroke: 2px rgba(255, 255, 255, 0.683); 
+                -webkit-text-stroke: 2px rgba(255, 255, 255, 0.683);
             }
 
             .project_wrap {
-                 margin-top: 7rem;
+                margin-top: 7rem;
 
                 .project_box {
                     height: 57rem;
@@ -1138,7 +1139,6 @@ $sky-gradient: linear-gradient(181deg,
             .contact_wrap {
                 color: #fff;
                 margin: 0 auto;
-
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -1150,10 +1150,10 @@ $sky-gradient: linear-gradient(181deg,
                 }
 
                 .main {
-
+                    z-index: 999;
                     display: flex;
                     align-items: center;
-                    gap: 10rem;
+                    gap: 8rem;
 
 
                     .call {
@@ -1164,26 +1164,42 @@ $sky-gradient: linear-gradient(181deg,
                         .phone {
                             display: flex;
                             gap: 1.5rem;
+
+                              &:hover {
+                                    color: #FFD700;
+                                }
                         }
 
                         .e-mail {
                             display: flex;
                             gap: 1.5rem;
+
+                              &:hover {
+                                    color: #FFD700;
+                                }
                         }
 
 
                         span {
                             font-size: 20px;
+                             font-family: 'TMoneyDungunbaram';
                         }
 
                         .btn_wrap {
                             margin-top: 2rem;
                             display: flex;
+                            gap: 2.5rem;
                             justify-content: space-between;
+                            font-family: 'TMoneyDungunbaram';
 
                             a {
                                 font-size: 20px;
+                                
+                                &:hover {
+                                    color: #FFD700;
+                                }
                             }
+
 
                         }
                     }
